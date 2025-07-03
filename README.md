@@ -73,6 +73,17 @@ mkdir pretrain_weights
 ```
 Place the BEiT checkpoints and tokenizer within this directory.
 
+The weights for Swin-S can be downloaded from [this link](https://dl.fbaipublicfiles.com/maskformer/mask2former/coco/instance/maskformer2_swin_small_bs16_50ep/model_final_1e7f22.pkl), and the weights for Swin-B can be downloaded from [this link](https://dl.fbaipublicfiles.com/maskformer/mask2former/coco/instance/maskformer2_swin_base_384_bs16_50ep/model_final_f6e0f6.pkl).  Please place the downloaded weights into the following directory.
+
+```
+pretrain_weights
+|—— beit3_base_patch16_224.zip
+├── beit3_large_patch16_224.zip
+├── beit3.spm
+├── model_final_f6e0f6.pkl
+└── model_final_1e7f22.pkl
+```
+
 The final directory structure of DeRIS should resemble the following:
 ```
 DeRIS
