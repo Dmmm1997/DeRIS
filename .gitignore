@@ -1,0 +1,15 @@
+*.pyc
+SeqTR.egg-info/
+work_dir/
+*.whl
+*.zip
+pretrain_weights/
+visualization/
+visualize/
+detectron2/
+detrex/
+wandb/
+pretrain_weights
+data/
+data
+.vscode/

@@ -1,0 +1,28 @@
+# apex
+mmdet==2.28.1
+pydantic==2.10.6
+pycocotools; platform_system == "Linux"
+# torch==2.0.0 --index-url https://download.pytorch.org/whl/cu118
+# torchvision==0.15.1 --index-url https://download.pytorch.org/whl/cu118
+numpy==1.24
+ninja==1.11.1.1
+transformers==4.44.2
+wandb
+timm==0.6.13
+fairscale==0.4.0
+einops==0.8.0
+torchscale==0.3.0
+torchmetrics==1.4.1
+SentencePiece
+fvcore
+cloudpickle
+omegaconf
+pickle5
+lmdb
+mmengine
+openpyxl
+opencv-python==4.10.0.84
+textdistance
+pandas
+mmcv-full==1.7.2
+# python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
