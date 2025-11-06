@@ -45,8 +45,8 @@ sh make.sh
 ### Data Preparation
 
 Following the data structure of the [C3VG](https://github.com/Dmmm1997/C3VG?tab=readme-ov-file#data-preparation).
-Prepare the mscoco dataset, Then download the mixed annotations [here](https://seunic-my.sharepoint.cn/:u:/g/personal/230238525_seu_edu_cn/EaLwcHWBhvRLlgv17QkN3_0BGGnuKq5gMOGCMFmvFCXLbw?e=qqL3Cs) and
-the grefs annotations [here](https://seunic-my.sharepoint.cn/:u:/g/personal/230238525_seu_edu_cn/EcB0nRt1gYFFnPFzOY4Zo6UB32fDANbhIA1epFzj4j9cdQ?e=YSpE0p).
+Prepare the mscoco dataset, Then download the mixed annotations [here](https://huggingface.co/datasets/Dmmm997/DeRIS_Data) and
+the grefs annotations [here](https://huggingface.co/datasets/Dmmm997/DeRIS_Data).
 
 The data structure should look like the following:
 ```
@@ -143,7 +143,7 @@ The results of DeRIS-B on RefCOCO/+/g mixed dataset are as follows:
 | val_refcocog_umd        | 76.30  | 73.89  | 84.15, 81.68, 77.98, 70.81, 48.53 |
 | test_refcocog_umd       | 77.15  | 75.88  | 85.53, 82.64, 79.06, 72.19, 48.12 |
 
-Download the [weight](https://seunic-my.sharepoint.cn/:u:/g/personal/230238525_seu_edu_cn/EfZNq-Wmr5dPhAfyP9Go1wABj4WTCtU_f0RFnfa3Wt1uzw?e=EIVEKf), reproduce the result using this script:
+Download the [weight](https://huggingface.co/Dmmm997/DeRIS), reproduce the result using this script:
 ```bash
 bash tools/dist_test.sh configs/refcoco/DERIS-B-refcoco.py 1 --load-from /PATH/TO/DeRIS-B-refcoco.pth
 ```
@@ -162,7 +162,7 @@ The results DeRIS-L on RefCOCO/+/g mixed dataset are as follows:
 | val_refcocog_umd        | 80.01  | 77.65  | 86.97, 84.70, 81.15, 74.88, 57.88 |
 | test_refcocog_umd       | 81.32  | 80.12  | 88.86, 86.68, 83.19, 76.46, 59.42 |
 
-Download the [weight](https://seunic-my.sharepoint.cn/:u:/g/personal/230238525_seu_edu_cn/EZvC21tD4yVOocjgEAocTdIBk-P_CfUU1_YIUTG7SZs20g?e=t0oh9J), reproduce the result using this script:
+Download the [weight](https://huggingface.co/Dmmm997/DeRIS), reproduce the result using this script:
 ```bash
 bash tools/dist_test.sh configs/refcoco/DERIS-L-refcoco.py 1 --load-from /PATH/TO/DeRIS-L-refcoco.pth
 ```
@@ -177,7 +177,7 @@ The results of DeRIS-B on gRefCOCO dataset are as follows:
 | testA    | 75.98  | 73.72  | 71.99  |
 | testB    | 63.44  | 65.63  | 64.65  |
 
-Download the [weight](https://seunic-my.sharepoint.cn/:u:/g/personal/230238525_seu_edu_cn/EVgSTnndkd5IvYtct0_ztMsB6GWVIBsMJd48r5dIh_LIeQ?e=UWcN2l), reproduce the result using this script:
+Download the [weight](https://huggingface.co/Dmmm997/DeRIS), reproduce the result using this script:
 ```bash
 bash tools/dist_test.sh configs/gres/DERIS-B-grefcoco.py 1 --load-from /PATH/TO/DeRIS-B-grefcoco.pth  --score-threshold 0.7
 ```
@@ -191,7 +191,7 @@ The results of DeRIS-L on gRefCOCO dataset are as follows:
 | testA  | 78.30 | 75.30 | 73.73 |
 | testB  | 66.81 | 67.99 | 67.38 |
 
-Download the [weight](https://seunic-my.sharepoint.cn/:u:/g/personal/230238525_seu_edu_cn/EVzG9iiJB4hEoC6FIjV7p8IBTJ0y8r0nmNwxQDbyNhDDYg?e=tmgJKJ), reproduce the result using this script:
+Download the [weight](https://huggingface.co/Dmmm997/DeRIS), reproduce the result using this script:
 ```bash
 bash tools/dist_test.sh configs/gres/DERIS-L-grefcoco.py 1 --load-from /PATH/TO/DeRIS-L-grefcoco.pth  --score-threshold 0.9
 ```
