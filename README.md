@@ -54,7 +54,7 @@ The data structure should look like the following:
     |--seqtr_type
         | -- annotations
             | -- mixed-seg
-                | -- instances_nogoogle.json
+                | -- instances_nogoogle_withid.json
             | -- grefs
                 | -- instance.json
         | -- images
